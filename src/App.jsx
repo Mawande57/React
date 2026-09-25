@@ -7,19 +7,18 @@
  */
 import Contact from "./contact.jsx"
 import cat from './images/mr-whiskerson.png'
+import Joke from './joke.jsx';
+import Header from './header.jsx';
+import Form from './Form.jsx'
 
 function App() {
     return (
-        <div className="contacts">
-            
-            <Contact name="Mr. Whiskerson"
-                     phone="(212) 555-1234"
-                     email="mr.whiskaz@catnap.meow"
-                     img={cat}
-                     />
-           
-            
-        </div>
+        <>
+           <Header />
+           <Form />
+        </>
+      
+
     )
 }
 

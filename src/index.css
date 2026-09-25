@@ -1,59 +1,50 @@
-* {
-    box-sizing: border-box;
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 70px;
+    background-color: white;
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.10), 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+}
+.header > img {
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
+.header > p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 300;
+    font-size :3rem;
+    color: black;
+    
 }
 
 body {
-    margin: 0;
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    font-family: 'Inter', sans-serif;
     background-color: whitesmoke;
 }
 
-.contacts {
+main {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-}
-
-.contact-card {
-    flex-basis: 225px;
-    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 13px;
-    padding-bottom: 20px;
-    background-color: white;
-}
-
-.contact-card > img {
-    width: 100%;
-    height: auto;
-    align-self: center;
-    border-radius: 5px;
-    object-fit: cover;
-}
-
-.contact-card > h3 {
-    font-weight: 700;
-    font-size: 18px;
-}
-
-.info-group {
-    display: flex;
     align-items: center;
+    height: 50px;
+    margin-top: 60px;
+    gap: 20px;
 }
 
-.info-group > img {
-    height: 11px;
-    margin-right: 8px;
+main > input {
+    border-radius: 5px;
+    height: 30px;
+    width: 33.33vw;
+    border-color:antiquewhite; 
+    padding-left: 5px;  /* 1/3 of the screen width */
 }
 
-.info-group > p {
-    margin-block: 3px;
-    font-size: 12px;
-    color: #2B283A;
+main > button {
+    background-color: black;
+    border-radius: 5px;
+    color: #FAFAF8;
+    height: 30px;       /* same height as the input */
+    width: 13.33vw; 
+        /* 40% of the input's width (33.33 × 0.4) */
 }
