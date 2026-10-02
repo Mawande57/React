@@ -105,13 +105,35 @@ ul.ingredients-list > li {
     cursor: pointer;
 }
 
-.suggested-recipe-container {
-    color: #475467;
-    line-height: 28px;
-    font-size: 1.125rem;
-    font-weight: 400;
+.suggested-recipe-container h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 24px 0 8px;
+    color: #141413;
 }
 
-.suggested-recipe-container ul li, .suggested-recipe-container ol li {
-    margin-bottom: 8px;
+.suggested-recipe-container h4 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin: 20px 0 6px;
+    color: #141413;
+}
+
+.suggested-recipe-container strong {
+    color: #141413;
+}
+
+.suggested-recipe-container ol,
+.suggested-recipe-container ul {
+    padding-left: 24px;
+}
+
+.suggested-recipe-container p {
+    margin: 12px 0;
+}
+
+.suggested-recipe-container hr {
+    border: none;
+    border-top: 1px solid #E5E7EB;
+    margin: 20px 0;
 }
