@@ -10,16 +10,40 @@ import cat from './images/mr-whiskerson.png'
 import Joke from './joke.jsx';
 import Header from './header.jsx';
 import Form from './Form.jsx'
+import './index.css'
+import { useState } from "react";
 
-function App() {
-    return (
-        <>
-           <Header />
-           <Form />
-        </>
+
+export default function App() {
+  /**
+     * Challenge: Convert the code below to use an array
+     * held in state instead of a local variable. Initialize 
+     * the state array as an empty array
+     * 
+     * Don't worry about fixing `addFavoriteThing` quite yet.
+     */
+  const [myFavoriteThings, setMyFavouriteThings] = useState([]);
+  const allFavoriteThings = ["💦🌹", "😺", "💡🫖", "🔥🧤", "🟤🎁", 
+  "🐴", "🍎🥧", "🚪🔔", "🛷🔔", "🥩🍝"]
+  const thingsElements = myFavoriteThings.map(thing => <p key={thing}>{thing}</p>)
+  
+  function addFavoriteThing() {
+    setMyFavouriteThings(prevFavThings => [...prevFavThings , allFavoriteThings[prevFavThings.length]]);
+  }
+  
+  return (
+    <>
+      <Header />
+      <Form />
+    </>
       
-
-    )
+  )
 }
 
-export default App
+/*   <main>
+      <button onClick={addFavoriteThing}>Add item</button>
+      <section aria-live="polite">
+        {thingsElements}
+      </section>
+    </main>
+*/

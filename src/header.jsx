@@ -3,9 +3,9 @@ import './index.css';
 
 export default function Header(){
     return (
-        <div className="header">
-            <img src={cluade} className="image" />
-            <p>Cheff Cluade</p>
-        </div>
+            <header>
+            <img src={cluade}/>
+            <h1>Chef Claude</h1>
+        </header>
     );
 }
